@@ -32,11 +32,16 @@ Before running the game, ensure you have the following installed:
 - pip (Python package installer)
 
 ## Installation
+1. if want to play directly without code do this step directly on windows:
+   https://github.com/keshav861/2048-game-python-kivy-windows/releases/download/v1.0.0/2048-v1.0.0.zip
+click the link above to directly download the game and play it
 
+## OR
+   
 1. Clone this repository:
 ```bash
-git clone [your-repository-url]
-cd 2048
+git clone https://github.com/keshav861/2048-game-python-kivy-windows.git
+cd 2048-game-python-kivy-windows
 ```
 
 2. Create and activate a virtual environment (recommended):
