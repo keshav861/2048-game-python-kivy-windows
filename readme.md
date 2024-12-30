@@ -36,7 +36,7 @@ Before running the game, ensure you have the following installed:
 1. Clone this repository:
 ```bash
 git clone https://github.com/keshav861/2048-game-python-kivy-windows.git
-cd 2048
+cd 2048-game-python-kivy-windows
 ```
 
 2. Create and activate a virtual environment (recommended):
