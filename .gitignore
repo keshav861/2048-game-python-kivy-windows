@@ -1,0 +1,12 @@
+# Build directories
+build/
+dist/
+__pycache__/
+*.pyc
+
+# Distribution packages
+*.zip
+*.exe
+
+# User-specific files
+game_state.json
