@@ -23,11 +23,15 @@ jobs:
         pip install -r requirements.txt
         
     - name: Format with black
+      shell: pwsh
       run: |
-        # Format the files instead of just checking
+        # Format the files
         black src/
         # Check if any changes were made
-        git diff --exit-code || (echo "Code formatting needed. Run 'black src/' locally" && exit 1)
+        if ($(git diff --name-only)) {
+            Write-Host "Code formatting needed. Run 'black src/' locally"
+            $host.SetShouldExit(1)
+        }
         
     - name: Run linting
       run: |
